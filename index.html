@@ -49,13 +49,13 @@
       Song generation focuses on producing controllable high-quality songs based on various prompts. 
       However, existing methods struggle to generate vocals and accompaniments with prompt-based control and proper alignment. 
       Additionally, they fall short in supporting various tasks.
-      To address these challenges, we introduce VersBand, the first multi-task song generation model for synthesizing high-quality, aligned songs with prompt-based control. 
+      To address these challenges, we introduce VersBand, the first multi-task song generation framework for synthesizing high-quality, aligned songs with prompt-based control. 
       VersBand comprises these primary models:
-      1) VocalBand, a decoupled model, leverages the flow-matching method for singing styles, pitches, and mel-spectrograms generation, allowing fast, high-quality vocal generation with style control.
+      1) VocalBand, a decoupled model, leverages the flow-matching method for generating singing styles, pitches, and mel-spectrograms, allowing fast, high-quality vocal generation with style control.
       2) AccompBand, a flow-based transformer model, incorporates the Band-MOE, selecting suitable experts for enhanced quality, alignment, and control.
       This model allows for generating controllable, high-quality accompaniments aligned with vocals.
       3) Two generation models, LyricBand for lyrics and MelodyBand for melodies, contribute to the comprehensive multi-task song generation system, allowing for extensive control based on multiple prompts.
-      Experimental results demonstrate that VersBand performs better over baseline models across multiple tasks using objective and subjective metrics.    </p>
+      Experimental results demonstrate that VersBand performs better over baseline models across multiple tasks using objective and subjective metrics.</p>
   </div>
 
   <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
@@ -68,7 +68,7 @@
       <p><br /></p>
     </div>
     <p>
-    In this paper, we introduce VersBand, the first multi-task song generation model for synthesizing high-quality, aligned songs with prompt-based control.
+    In this paper, we introduce VersBand, the first multi-task song generation framework for synthesizing high-quality, aligned songs with prompt-based control.
     Following the human perception that accompaniment complements vocal melody with complex harmonic and rhythmic structure, we generate them separately.
     To achieve fast and high-quality vocal generation with control, we design a decoupled model VocalBand, predicting singing styles, pitches, and mel-spectrograms based on the flow-matching method.
     Based on the complex nature of music, we introduce a flow-based transformer model AccompBand to generate high-fidelity, controllable, aligned accompaniments.
